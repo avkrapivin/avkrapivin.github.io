@@ -323,7 +323,7 @@ body {
 }
 
 .experience-description {
-    font-size: 0.95rem; 
+    font-size: 0.95rem;
     color: #616E7C;
     line-height: 1.6;
     margin-top: 5px;
@@ -555,20 +555,20 @@ body {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .home-social-fixed {
-        position: static;
-        transform: none;
-        left: auto;
-        top: auto;
-        margin-bottom: 30px;
-    }
-
-    .home-social {
-        flex-direction: row;
-        justify-content: center;
+        display: none;
     }
 
     .home-social-wrapper {
         justify-content: center;
+    }
+
+    .education-item .experience-header {
+        flex-wrap: wrap;
+    }
+
+    .education-item .experience-company {
+        margin-left: 0;
+        flex-basis: 100%;
     }
 
     .project-item {
@@ -577,7 +577,32 @@ body {
     }
 
     .project-image-wrapper {
-        height: 300px;
+        height: auto;
+        background-color: #E5E7EB;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .project-image--portrait {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: contain;
+    }
+
+    .project-links {
+        justify-content: center;
     }
 
     .project-content {
